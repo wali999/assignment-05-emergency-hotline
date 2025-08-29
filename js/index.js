@@ -45,61 +45,6 @@ for (const copy of copies)
 
 
 // 5. Call buttons
-//Copying
-document.getElementById('emergency-copy')
-    .addEventListener('click', function () {
-
-        alert('National Emergency Number Copied')
-    })
-document.getElementById('police-copy')
-    .addEventListener('click', function () {
-
-        alert('Police Helpline Number Copied')
-    })
-document.getElementById('fire-copy')
-    .addEventListener('click', function () {
-
-        alert('Fire Service Number Copied')
-    })
-document.getElementById('ambulance-copy')
-    .addEventListener('click', function () {
-
-        alert('Ambulance Number Copied')
-    })
-document.getElementById('women-copy')
-    .addEventListener('click', function () {
-
-        alert('Women & child helpline Number Copied')
-    })
-document.getElementById('anti-copy')
-    .addEventListener('click', function () {
-
-        alert('Anti Corruption Number Copied')
-    })
-document.getElementById('electricity-copy')
-    .addEventListener('click', function () {
-
-        alert('Electricity Number Copied')
-    })
-document.getElementById('brac-copy')
-    .addEventListener('click', function () {
-
-        alert('Brac Helpline Number Copied')
-    })
-document.getElementById('rail-copy')
-    .addEventListener('click', function () {
-
-        alert('Railway Number Copied')
-    })
-
-
-
-
-
-
-
-
-
 
 
 //Coin decrease section
