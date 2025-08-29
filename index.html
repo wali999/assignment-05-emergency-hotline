@@ -27,14 +27,13 @@
                 <div class="flex justify-center items-center bg-[#41ff6b1a] w-[100px] gap-2 p-3 rounded-3xl">
                     <h3 id="heart-balance">0</h3>
                     <img src="./assets/heart.png" class="h-[20px]" alt="">
-                    <!-- <i class="fa-solid fa-heart " style="color: #ED1C24;"></i> -->
                 </div>
                 <div class="flex justify-center items-center bg-[#41ff6b1a] w-[100px] gap-2 p-3 rounded-3xl">
                     <h3 id="coin-balance">100</h3>
                     <img src="./assets/coin.png" class="h-[20px]" alt="">
                 </div>
                 <div class="flex justify-center items-center bg-[#00a63e] text-white w-[100px] gap-2 p-3 rounded-3xl">
-                    <h3>2</h3>
+                    <h3 id="copy-balance">0</h3>
                     <p>Copy</p>
                 </div>
             </div>
@@ -78,7 +77,7 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px] copy"
                                 id="emergency-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
@@ -109,7 +108,7 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]  copy"
                                 id="police-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
@@ -139,7 +138,7 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]  copy"
                                 id="fire-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
@@ -169,8 +168,8 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"><i
-                                    class="fa-regular fa-clone"></i>
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px] copy"
+                                id="ambulance-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
                         <div>
@@ -199,8 +198,8 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"><i
-                                    class="fa-regular fa-clone"></i>
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]  copy"
+                                id="women-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
                         <div>
@@ -229,8 +228,8 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"><i
-                                    class="fa-regular fa-clone"></i>
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px] copy"
+                                id="anti-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
                         <div>
@@ -260,8 +259,8 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"><i
-                                    class="fa-regular fa-clone"></i>
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px] copy"
+                                id="electricity-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
                         <div>
@@ -291,8 +290,8 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"><i
-                                    class="fa-regular fa-clone"></i>
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]  copy"
+                                id="brac-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
                         <div>
@@ -321,8 +320,8 @@
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
                         <div>
-                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px]"><i
-                                    class="fa-regular fa-clone"></i>
+                            <button class="border-1 border-gray-400 h-[35px] rounded-md btn-outline w-[120px] copy"
+                                id="rail-copy"><i class="fa-regular fa-clone"></i>
                                 Copy</button>
                         </div>
                         <div>
@@ -348,19 +347,10 @@
                         <h3>Call History</h3>
                     </div>
                     <div>
-                        <button class="btn bg-[#00a63e] text-white w-[100px] p-3 rounded-3xl">Clear</button>
+                        <button id="clear-history"
+                            class="btn bg-[#00a63e] text-white w-[100px] p-3 rounded-3xl">Clear</button>
                     </div>
                 </div>
-                <!--<div class="flex justify-between items-center bg-[#fafafa p-2 rounded-md shadow-sm">
-                     <div>
-                        <h1>Fire service number</h1>
-                        <p>999</p>
-                    </div>
-                    <div>
-                        <p>11:36:58 AM</p>
-                    </div>   
-                </div>-->
-
                 <div id="call-history-container">
                 </div>
             </div>

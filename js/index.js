@@ -27,6 +27,22 @@ for (const heart of hearts)
 
 
 
+// Copy count section
+const copies = document.getElementsByClassName('copy')
+const copyBalance = parseInt(document.getElementById('copy-balance').innerText)
+
+let num = 0
+for (const copy of copies)
+    copy.addEventListener('click', function () {
+        num++
+        const totalCopyBalance = copyBalance + num
+        document.getElementById('copy-balance').innerText = totalCopyBalance
+    })
+
+
+
+
+
 
 // 5. Call buttons
 //Copying
@@ -35,6 +51,56 @@ document.getElementById('emergency-copy')
 
         alert('National Emergency Number Copied')
     })
+document.getElementById('police-copy')
+    .addEventListener('click', function () {
+
+        alert('Police Helpline Number Copied')
+    })
+document.getElementById('fire-copy')
+    .addEventListener('click', function () {
+
+        alert('Fire Service Number Copied')
+    })
+document.getElementById('ambulance-copy')
+    .addEventListener('click', function () {
+
+        alert('Ambulance Number Copied')
+    })
+document.getElementById('women-copy')
+    .addEventListener('click', function () {
+
+        alert('Women & child helpline Number Copied')
+    })
+document.getElementById('anti-copy')
+    .addEventListener('click', function () {
+
+        alert('Anti Corruption Number Copied')
+    })
+document.getElementById('electricity-copy')
+    .addEventListener('click', function () {
+
+        alert('Electricity Number Copied')
+    })
+document.getElementById('brac-copy')
+    .addEventListener('click', function () {
+
+        alert('Brac Helpline Number Copied')
+    })
+document.getElementById('rail-copy')
+    .addEventListener('click', function () {
+
+        alert('Railway Number Copied')
+    })
+
+
+
+
+
+
+
+
+
+
 
 //Coin decrease section
 const coins = document.getElementsByClassName('call')
@@ -443,3 +509,15 @@ document.getElementById("rail-call").addEventListener("click", function () {
 
     }
 })
+
+
+
+
+
+
+//Clear History
+document.getElementById('clear-history')
+    .addEventListener('click', function () {
+        callHistoryData.length = 0
+        document.getElementById('call-history-container').innerHTML = ''
+    })
