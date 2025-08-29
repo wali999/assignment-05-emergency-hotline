@@ -30,7 +30,7 @@
                     <!-- <i class="fa-solid fa-heart " style="color: #ED1C24;"></i> -->
                 </div>
                 <div class="flex justify-center items-center bg-[#41ff6b1a] w-[100px] gap-2 p-3 rounded-3xl">
-                    <h3>100</h3>
+                    <h3 id="coin-balance">100</h3>
                     <img src="./assets/coin.png" class="h-[20px]" alt="">
                 </div>
                 <div class="flex justify-center items-center bg-[#00a63e] text-white w-[100px] gap-2 p-3 rounded-3xl">
@@ -83,8 +83,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"
-                                id="emergency-call"><i class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="emergency-call"><i class="fa-solid fa-phone "></i>
                                 Call</button>
                         </div>
 
@@ -114,7 +114,7 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
                                 id="police-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
@@ -131,10 +131,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Fire Service Number</h3>
-                        <p class="text-[#5c5c5c]">Fire Service</p>
+                        <p class="text-[#5c5c5c] " id="fire-service">Fire Service</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">999</h1>
+                        <h1 class="font-bold text-lg" id="fire-number">999</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">Fire</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -144,7 +144,7 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
                                 id="fire-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
@@ -161,10 +161,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Ambulance Service</h3>
-                        <p class="text-[#5c5c5c]">Ambulance</p>
+                        <p class="text-[#5c5c5c]" id="ambulance-service">Ambulance</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">1994-999999</h1>
+                        <h1 class="font-bold text-lg" id="ambulance-number">1994-999999</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">Health</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -174,8 +174,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"><i
-                                    class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="ambulance-call"><i class="fa-solid fa-phone "></i>
                                 Call</button>
                         </div>
 
@@ -191,10 +191,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Women & Child Helpline</h3>
-                        <p class="text-[#5c5c5c]">Women & Child Helpline</p>
+                        <p class="text-[#5c5c5c]" id="women-service">Women & Child Helpline</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">109</h1>
+                        <h1 class="font-bold text-lg" id="women-number">109</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">Help</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -204,8 +204,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"><i
-                                    class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="women-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
 
@@ -221,10 +221,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Anti-Corruption Helpline</h3>
-                        <p class="text-[#5c5c5c]">Anti-Corruption</p>
+                        <p class="text-[#5c5c5c]" id="anti-service">Anti-Corruption</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">106</h1>
+                        <h1 class="font-bold text-lg" id="anti-number">106</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">Govt.</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -234,8 +234,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"><i
-                                    class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="anti-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
 
@@ -252,10 +252,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Electricity Helpline</h3>
-                        <p class="text-[#5c5c5c]">Electricity Outage</p>
+                        <p class="text-[#5c5c5c]" id="electricity-service">Electricity Outage</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">16216</h1>
+                        <h1 class="font-bold text-lg" id="electricity-number">16216</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">Electricity</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -265,8 +265,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"><i
-                                    class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="electricity-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
 
@@ -283,10 +283,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Brac Helpline</h3>
-                        <p class="text-[#5c5c5c]">Brac Helpline</p>
+                        <p class="text-[#5c5c5c]" id="brac-service">Brac Helpline</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">16445</h1>
+                        <h1 class="font-bold text-lg" id="brac-number">16445</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">NGO</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -296,8 +296,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"><i
-                                    class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="brac-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
 
@@ -313,10 +313,10 @@
                     </div>
                     <div class="pt-3">
                         <h3 class="font-bold">Bangladesh Railway Helpline </h3>
-                        <p class="text-[#5c5c5c]">Bangladesh Railway</p>
+                        <p class="text-[#5c5c5c]" id="rail-service">Bangladesh Railway</p>
                     </div>
                     <div class="pt-3">
-                        <h1 class="font-bold text-lg">163</h1>
+                        <h1 class="font-bold text-lg" id="rail-number">163</h1>
                         <span class="text-[#5c5c5c] bg-[#f2f2f2] rounded-xl p-1">Travel</span>
                     </div>
                     <div class="flex justify-between items-center mx-auto pt-3 ">
@@ -326,8 +326,8 @@
                                 Copy</button>
                         </div>
                         <div>
-                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px]"><i
-                                    class="fa-solid fa-phone"></i>
+                            <button class="h-[35px] rounded-md btn-outline bg-[#00a63e] text-white w-[120px] call"
+                                id="rail-call"><i class="fa-solid fa-phone"></i>
                                 Call</button>
                         </div>
 
